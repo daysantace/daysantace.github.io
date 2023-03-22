@@ -1,38 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 body{
-  background-color:#55555A;
-  font-family:montserrat;
-  font-size:18px;
+  background-color:#002b36;
+  color:#93a1a1;
+  font-family: "Courier New",monospace;
+  font-weight:bolder;
 }
-
-.button{
-	background-color:#202025;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:montserrat;
-	font-size:17px;
-	padding:3px 12px;
-	text-decoration:none;
+.cover{
+  padding-right:6pt;
+  padding-left:6pt;
+  padding-top:12pt;
+  padding-bottom:12pt;
 }
-.button:hover {
-  color:#202025;
-	background-color:#f0f0f0;
+.divheader{
+  color:#657b83;
+  font-weight:bolder;
 }
-
-div {
-background-color:#202025;
-color:#ffffff;
-padding: 10px;
-border-style:solid;
-border-width:10px;
-border-color:#55555a;
-}
-
 a{
-  color:#f0f0f5;
+  color:#268bd2;
   text-decoration:none;
-}
-a:hover{
-  color:lightsteelblue;
 }
