@@ -4,15 +4,12 @@ body {
   color: #ffffff;
   font-family: "Courier New", monospace;
   font-weight: normal;
-  height: 100vh; 
-  margin: 0;
   display: flex;
   flex-direction: column; 
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left:2em;
-  margin-right:2em;
+  
 }
 
 .header {
