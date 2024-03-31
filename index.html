@@ -56,18 +56,20 @@
 	  <p>i have a dell G5 15 with an i7-10750H, GTX 1660Ti, and running mint cinnamon 21.3.</p>
 	  <p>libertarian, market socialist, pacifist, and transhumanist.</p>
 	  <hr>
-	  UTC±0 • <span id="utc-time"></span>
+	  UTC+1 • <span id="utc-time"></span>
 		<script>
-			function update_time() {
-				var now = new Date();
-				var hours = now.getUTCHours().toString().padStart(2, '0');
-				var minutes = now.getUTCMinutes().toString().padStart(2, '0');
-				var seconds = now.getUTCSeconds().toString().padStart(2, '0');
-				var current_time = hours + ':' + minutes + ':' + seconds;
-				document.getElementById('utc-time').innerText = current_time;
-			}
-			update_time();
-			setInterval(update_time, 1000);
+function update_time() {
+    var now = new Date();
+    // Add 1 hour for UTC+1
+    now.setUTCHours(now.getUTCHours() + 1);
+    var hours = now.getUTCHours().toString().padStart(2, '0');
+    var minutes = now.getUTCMinutes().toString().padStart(2, '0');
+    var seconds = now.getUTCSeconds().toString().padStart(2, '0');
+    var current_time = hours + ':' + minutes + ':' + seconds;
+    document.getElementById('utc-time').innerText = current_time;
+}
+update_time();
+setInterval(update_time, 1000);
 		</script>
 	</body>
 </html>
