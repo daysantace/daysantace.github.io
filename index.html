@@ -5,25 +5,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="content">
-			<span class="header">hey welcome to my corner of the web</span><br>
-			i'm daysant, your local they/them nb aroace<br>
-			linux mint 21.1 cinnamon<br>
-			my native language is english although i'm also learning german and japanese<br>
-			transhumanist libertarian market socialist<br>
-			clinically diagnosed asperger's and ADHD, self-diagnosed social anxiety and bp2d<br><br><br>
-			<span class="header">what i do</span><br>
-			i program sometimes, you can see my github if you wanna see what i've done<br>
-			certified weeb, particularly dwelling on bocchi and onimai rn<br>
-			i'm trash (iykyk)<br>
-			i'm also making an indie game, <a href="https://github.com/daysantace/pow-robot">here</a><br><br><br>
-			<span class="header">contact</span><br>
-			note that i don't use any social media whatsoever<br>
-			email: daysant@proton.me<br>
-			discord: daysant<br>
-			github: daysantace<br><br><br>
-			licenced under the AGPL v3.0-or-later. <a href="https://github.com/daysantace/daysantace.github.io">source code</a>
+		daysant
+		<hr>
+		daysant (discord) · <a href="https://www.github.com/daysantace">daysantace</a> (github)<br>
+		daysant@proton.me
+		<hr>
+		they/them · greyaroace<br>
+		native english · japanese N5<br>
+		northern ireland
+		<hr>
+		<p>hey! i'm daysant, one person among the 8 billion on this wet rock in space. i go by they/them, a greyaroace, and i simply do not gender</p>
+		<p>i mostly spend my free time either programming (check out my github!), watching anime/reading manga, or playing games. you can also find me a lot on discord.</p>
+		<p>i have a dell G5 15 with an i7-10750H, GTX 1660 Ti, running on linux mint cinnamon 21.3.</p>
+		<p>libertarian, transhumanist, japanese communist</p>
+		<hr>
+		UTC±0 · <span id="utc-time"></span>
+		<!--<span style="font-size:0.75em"><a href="index-ja.html">日本語</a></span>-->
+		<script>
+			function update_time() {
+				var now = new Date();
+				var hours = now.getUTCHours().toString().padStart(2, '0');
+				var minutes = now.getUTCMinutes().toString().padStart(2, '0');
+				var seconds = now.getUTCSeconds().toString().padStart(2, '0');
+				var current_time = hours + ':' + minutes + ':' + seconds;
+				document.getElementById('utc-time').innerText = current_time;
+			}
+			update_time();
+			setInterval(update_time, 1000);
+		</script>
 	</body>
 </html>
