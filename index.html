@@ -4,32 +4,61 @@
 		<title>daysant</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+		<style>
+body {
+	  width:min(90vw,600px);
+	  padding:10px;
+	  color:white;
+	  background-color:#202025;
+	  text-align:center;
+	  font-family: "Ubuntu", sans-serif;
+	}
+	  
+	a{
+	  color:#80e3ff;
+	}
+	  
+	a:hover{
+	text-decoration:none;
+	}
+  
+@media (min-width: 650px) and (min-height: 450px) {
+    body {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+    }
+}
+	  </style>
 	</head>
 	<body>
-		daysant
-		<hr>
-		daysant (discord) · <a href="https://www.github.com/daysantace">daysantace</a> (github)<br>
-		daysant@proton.me
-		<hr>
-		they/them · greyaroace<br>
-		native english · japanese N5<br>
-		northern ireland
-		<hr>
-		<p>hey! i'm daysant, one person among the 8 billion on this wet rock in space. i go by they/them, a greyaroace, and i simply do not gender</p>
-		<p>i mostly spend my free time either programming (check out my github!), watching anime/reading manga, or playing games. you can also find me a lot on discord.</p>
-		<p>i have a dell G5 15 with an i7-10750H, GTX 1660 Ti, running on linux mint cinnamon 21.3.</p>
-		<p>libertarian, transhumanist, japanese communist</p>
-		<hr>
-		UTC±0 · <span id="utc-time"></span>
-		<!--<span style="font-size:0.75em"><a href="index-ja.html">日本語</a></span>-->
+	  daysant
+	  <hr>
+	  discord - daysant • github - <a href="https://www.github.com/daysantace">daysantace</a><br>
+	  daysant@proton.me
+	  <hr>
+	  they/them • greyaroace<br>
+	  15 years of uptime<br>
+	  english native • japanese N5<br>
+	  ADHD • ASD<br>
+	  northern ireland
+	  <hr>
+	  <p>hi! i'm daysant, one of the 8 billion individuals on this wet rock in space. i go by they/them, greyaroace, and simply do not gender.</p>
+	  <p>i spend most of my free time developing (check out my github), playing games, or watching anime/reading manga. you can also find me a lot on discord.</p>
+	  <p>i have a dell G5 15 with an i7-10750H, GTX 1660Ti, and running mint cinnamon 21.3.</p>
+	  <p>libertarian, market socialist, pragmatic pacifist, and fash bashing enjoyer</p>
+	  <hr>
+	  UTC+1 • <span id="utc-time"></span>
 		<script>
 			function update_time() {
 				var now = new Date();
-				var hours = now.getUTCHours().toString().padStart(2, '0');
+				var hours = (now.getUTCHours() + 1).toString().padStart(2, '0');
 				var minutes = now.getUTCMinutes().toString().padStart(2, '0');
 				var seconds = now.getUTCSeconds().toString().padStart(2, '0');
 				var current_time = hours + ':' + minutes + ':' + seconds;
